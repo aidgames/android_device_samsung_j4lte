@@ -18,3 +18,6 @@
 include device/samsung/universal7570-common/BoardConfigCommon.mk
 
 LOCAL_PATH := device/samsung/j4lte
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth

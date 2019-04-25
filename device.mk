@@ -21,5 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from universal7570-common
 $(call inherit-product, device/samsung/universal7570-common/device-common.mk)
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-service
+
 # Call the proprietary setup
 $(call inherit-product, vendor/samsung/j4lte/j4lte-vendor.mk)
