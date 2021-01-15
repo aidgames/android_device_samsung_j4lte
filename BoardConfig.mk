@@ -19,5 +19,11 @@ include device/samsung/universal7570-common/BoardConfigCommon.mk
 
 LOCAL_PATH := device/samsung/j4lte
 
+# Supported devices codename
+TARGET_OTA_ASSERT_DEVICE := j4lte, j4ltejx, j4lteub
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_j4lte
